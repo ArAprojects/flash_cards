@@ -6,8 +6,12 @@ class Turn
   end
 
   def correct?
-  @guess == card.answer
-  end
+  if @guess == card.answer
+  true
+else
+  false
+end
+end
 
   def feedback
     if correct?
